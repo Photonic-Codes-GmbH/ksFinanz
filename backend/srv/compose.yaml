@@ -1,0 +1,88 @@
+# https://hub.docker.com/_/mariadb
+# https://hub.docker.com/_/phpmyadmin
+
+version: '3.8'
+
+volumes:
+  kc-database-data:
+    name: kc-database-data
+  mariadb-data:
+    name: mariadb-data
+
+networks:
+  proxy-net:
+    name: photonic-codes-network
+    driver: bridge
+
+services:
+  kc-database:
+    container_name: kc-database
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: password
+    volumes:
+      - kc-database-data:/var/lib/postgresql/data
+    networks:
+      - proxy-net
+    ports:
+      - 5432:5432
+
+  kc:
+    container_name: kc
+    image: quay.io/keycloak/keycloak:25.0.0
+    depends_on:
+      - kc-database
+    restart: unless-stopped
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://kc-database:5432/keycloak
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: password
+
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: password
+
+      KC_LOG_LEVEL: info
+      KC_METRICS_ENABLED: true
+      KC_HEALTH_ENABLED: true
+    networks:
+      - proxy-net
+    ports:
+      - 8080:8080
+    command: start-dev
+
+  mariadb:
+    container_name: mariadb
+    image: mariadb:11.1.4 # https://hub.docker.com/_/mariadb/tags
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+      MARIADB_DATABASE: db
+      MARIADB_USER: user
+      MARIADB_PASSWORD: password
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    networks:
+      - proxy-net
+    ports:
+      - 3306:3306
+
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin:5.2.1 # https://hub.docker.com/_/phpmyadmin/tags
+    depends_on:
+      - mariadb
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    networks:
+      - proxy-net
+    ports:
+      - 8081:80
