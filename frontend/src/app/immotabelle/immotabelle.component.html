@@ -1,0 +1,61 @@
+<div class="App">
+	<div class="titlelayout">
+		<div class="headinglayout">
+<div class="heading-rich-text">
+	<h3><strong><span style="color: rgb(255, 255, 255);">{{ title }}</span></strong></h3>
+</div>
+		</div>
+		<div class="infolayout">
+<div class="info-rich-text">
+	<p><img src="https://api.iconify.design/ci/info.svg?color=white" alt="" width="24" height="24"></p>
+</div>
+		</div>
+	</div>
+	<div class="contentlayout">
+		<div class="alayout">
+			<div class="ahead">
+<div class="aheading">
+	<h5>Spanne von</h5>
+</div>
+			</div>
+			<div class="acolumn">
+<input #thisinput_a1 [id]="prefix + 'a1'" class="a1" [value]="projectDataCacheService.getValue(prefix + 'a1')" (input)="projectDataCacheService.setValue(prefix + 'a1', thisinput_a1.value)">
+
+<input #thisinput_a2 [id]="prefix + 'a2'" class="a2" [value]="projectDataCacheService.getValue(prefix + 'a2')" (input)="projectDataCacheService.setValue(prefix + 'a2', thisinput_a2.value)">
+
+<input #thisinput_a3 [id]="prefix + 'a3'" class="a3" [value]="projectDataCacheService.getValue(prefix + 'a3')" (input)="projectDataCacheService.setValue(prefix + 'a3', thisinput_a3.value)">
+
+			</div>
+		</div>
+		<div class="blayout">
+			<div class="bhead">
+<div class="bheading">
+	<h5>Spanne bis</h5>
+</div>
+			</div>
+			<div class="bcolumn">
+<input #thisinput_b1 [id]="prefix + 'b1'" class="b1" [value]="projectDataCacheService.getValue(prefix + 'b1')" (input)="projectDataCacheService.setValue(prefix + 'b1', thisinput_b1.value)">
+
+<input #thisinput_b2 [id]="prefix + 'b2'" class="b2" [value]="projectDataCacheService.getValue(prefix + 'b2')" (input)="projectDataCacheService.setValue(prefix + 'b2', thisinput_b2.value)">
+
+<input #thisinput_b3 [id]="prefix + 'b3'" class="b3" [value]="projectDataCacheService.getValue(prefix + 'b3')" (input)="projectDataCacheService.setValue(prefix + 'b3', thisinput_b3.value)">
+
+			</div>
+		</div>
+		<div class="clayout">
+			<div class="chead">
+<div class="cheading">
+	<h5>m.W.</h5>
+</div>
+			</div>
+			<div class="ccolumn">
+<input #thisinput_c1 [id]="prefix + 'c1'" class="c1" [value]="projectDataCacheService.getValue(prefix + 'c1')" (input)="projectDataCacheService.setValue(prefix + 'c1', thisinput_c1.value)">
+
+<input #thisinput_c2 [id]="prefix + 'c2'" class="c2" [value]="projectDataCacheService.getValue(prefix + 'c2')" (input)="projectDataCacheService.setValue(prefix + 'c2', thisinput_c2.value)">
+
+<input #thisinput_c3 [id]="prefix + 'c3'" class="c3" [value]="projectDataCacheService.getValue(prefix + 'c3')" (input)="projectDataCacheService.setValue(prefix + 'c3', thisinput_c3.value)">
+
+			</div>
+		</div>
+	</div>
+</div>

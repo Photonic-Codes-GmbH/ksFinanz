@@ -1,0 +1,551 @@
+.baugrundstuecke {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+:host {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.titletextlayout {
+  display: flex;
+  margin-top: 48px;
+  margin-right: 8px;
+  margin-left: 32px;
+  margin-bottom: 8px;
+}
+
+.titletextinnerlayout {
+  display: flex;
+  padding-left: 8px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.titletext {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.savebutton2layout {
+  display: flex;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.savebutton {
+  font-size: 16px;
+  border-width: 2px;
+  cursor: pointer;
+  padding-top: 10px;
+  border-style: solid;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  border-color: #ff0000;
+  border-radius: 25px;
+  height: 32px;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.savebutton:hover {
+  color: #ff0000;
+  background-color: #ffffff;
+}
+
+.baucontainer {
+  display: flex;
+  margin-left: 32px;
+  margin-top: 48px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  flex-direction: column;
+}
+
+.cardlayout {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  box-shadow: 2px 2px 3px #00000045;
+}
+
+.cardtitlelayout {
+  display: flex;
+}
+
+.cardtitletextlayout {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: flex-start;
+}
+
+.ffeuzfh-text {
+  font-weight: bold;
+  height: 20px;
+  font-size: 16px;
+}
+
+.buttonslayout {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  width: 5%;
+  align-items: center;
+}
+
+.Layout23456789101112131415161718 {
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+.savebuttonrich {}
+
+.Layout2345678910111213141516171819 {
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+.infobuttonrich {}
+
+.cardcontentlayout {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.entrieslayout {
+  display: flex;
+  width: 10%;
+  flex-direction: column;
+}
+
+.Layout23456789101112132 {
+  display: flex;
+  align-items: flex-end;
+  height: 43%;
+  justify-content: flex-start;
+}
+
+.text2342 {
+  font-weight: bold;
+}
+
+.Layout2345678910111213142 {
+  display: flex;
+  background-color: #dddddd;
+  height: 19%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text232 {}
+
+.Layout234567891011121314152 {
+  display: flex;
+  height: 19%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.text22 {}
+
+.Layout23456789101112131415162 {
+  display: flex;
+  height: 19%;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #dddddd;
+}
+
+.text2345 {}
+
+.nwlayout {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 2px 2px 3px #00000045;
+  border: solid 1px #e0e0e0;
+  border-radius: 10px 10px 0 0;
+}
+
+.gap2layout {
+  display: flex;
+  width: 2.5%;
+  flex-direction: column;
+}
+
+.Layout23452 {
+  display: flex;
+  height: 43%;
+}
+
+.Layout234562 {
+  display: flex;
+  height: 19%;
+  background-color: #dddddd;
+}
+
+.Layout2345672 {
+  display: flex;
+  height: 19%;
+}
+
+.Layout23456782 {
+  display: flex;
+  background-color: #dddddd;
+  height: 19%;
+}
+
+.gwlayout {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  box-shadow: 2px 2px 3px #00000045;
+  position: relative;
+  border: solid 1px #e0e0e0;
+  border-radius: 10px 10px 0 0;
+}
+
+.gap3layout {
+  display: flex;
+  width: 2.5%;
+  flex-direction: column;
+}
+
+.Layout234567892 {
+  display: flex;
+  height: 43%;
+}
+
+.Layout23456789102 {
+  display: flex;
+  background-color: #dddddd;
+  height: 19%;
+}
+
+.Layout2345678910112 {
+  display: flex;
+  height: 19%;
+}
+
+.Layout234567891011122 {
+  display: flex;
+  height: 19%;
+  background-color: #dddddd;
+}
+
+.sgwlayout {
+  display: flex;
+  box-shadow: 2px 2px 3px #00000045;
+  flex-direction: column;
+  position: relative;
+  width: 25%;
+  border: solid 1px #e0e0e0;
+  border-radius: 10px 10px 0 0;
+}
+
+.gap4layout {
+  display: flex;
+  width: 10%;
+  flex-direction: column;
+}
+
+.Layout2 {
+  display: flex;
+  height: 43%;
+}
+
+.Layout23 {
+  display: flex;
+  height: 19%;
+  background-color: #dddddd;
+}
+
+.Layout2345 {
+  display: flex;
+  height: 19%;
+  background-color: #ffffff;
+}
+
+.Layout234 {
+  display: flex;
+  height: 19%;
+  background-color: #dddddd;
+}
+
+.baucontainer2 {
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 8px;
+  margin-left: 32px;
+  margin-right: 8px;
+  flex-direction: column;
+}
+
+.cardlayout2 {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  box-shadow: 2px 2px 3px #00000045;
+}
+
+.cardtitlelayout2 {
+  display: flex;
+}
+
+.cardtitletextlayout2 {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: flex-start;
+}
+
+.ffeuzfh-text2 {
+  font-weight: bold;
+  height: 20px;
+  font-size: 16px;
+}
+
+.buttonslayout2 {
+  display: flex;
+  gap: 0.5rem;
+  width: 5%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Layout234567891011121314151617182 {
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+.savebuttonrich2 {}
+
+.Layout23456789101112131415161718192 {
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+.infobuttonrich2 {}
+
+.cardcontentlayout2 {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.entrieslayout2 {
+  display: flex;
+  width: 8%;
+  flex-direction: column;
+}
+
+.Layout2345678910111213 {
+  display: flex;
+  align-items: flex-end;
+  height: 43%;
+  justify-content: flex-start;
+}
+
+.text234 {
+  font-weight: bold;
+}
+
+.Layout234567891011121314 {
+  display: flex;
+  background-color: #dddddd;
+  height: 19%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text23 {}
+
+.Layout23456789101112131415 {
+  display: flex;
+  height: 19%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.text2 {}
+
+.Layout2345678910111213141516 {
+  display: flex;
+  height: 19%;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #dddddd;
+}
+
+.text {}
+
+.ewlayout2 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: solid 1px #e0e0e0;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  box-shadow: 2px 2px 3px #00000045;
+}
+
+.gap1layout {
+  display: flex;
+  flex-direction: column;
+  width: 1.333%;
+}
+
+.Layout {
+  display: flex;
+  height: 43%;
+}
+
+.Layout22 {
+  display: flex;
+  height: 19%;
+  background-color: #dddddd;
+}
+
+.Layout232 {
+  display: flex;
+  height: 19%;
+}
+
+.Layout2342 {
+  display: flex;
+  height: 19%;
+  background-color: #dddddd;
+}
+
+.nwlayout2 {
+  display: flex;
+  width: 20%;
+  border: solid 1px #e0e0e0;
+  border-radius: 10px 10px 0 0;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 2px 2px 3px #00000045;
+}
+
+.gap2layout2 {
+  display: flex;
+  width: 1.333%;
+  flex-direction: column;
+}
+
+.Layout234523 {
+  display: flex;
+  height: 43%;
+}
+
+.Layout23456 {
+  display: flex;
+  height: 19%;
+  background-color: #dddddd;
+}
+
+.Layout234567 {
+  display: flex;
+  height: 19%;
+}
+
+.Layout2345678 {
+  display: flex;
+  background-color: #dddddd;
+  height: 19%;
+}
+
+.gwlayout2 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: solid 1px #e0e0e0;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 2px 2px 3px #00000045;
+  border: solid 1px #e0e0e0;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.gap3layout2 {
+  display: flex;
+  width: 1.3%;
+  flex-direction: column;
+}
+
+.Layout23456789 {
+  display: flex;
+  height: 43%;
+}
+
+.Layout2345678910 {
+  display: flex;
+  background-color: #dddddd;
+  height: 19%;
+}
+
+.Layout234567891011 {
+  display: flex;
+  height: 19%;
+}
+
+.Layout23456789101112 {
+  display: flex;
+  height: 19%;
+  background-color: #dddddd;
+}
+
+.sgwlayout2 {
+  display: flex;
+  box-shadow: 2px 2px 3px #00000045;
+  flex-direction: column;
+  position: relative;
+  width: 20%;
+  border: solid 1px #e0e0e0;
+  border-radius: 10px 10px 0 0;
+}
+
+.gap4layout2 {
+  display: flex;
+  flex-direction: column;
+  width: 8%;
+}
+
+.Layout234567891011121314151617181920 {
+  display: flex;
+  height: 43%;
+}
+
+.Layout23456789101112131415161718192021 {
+  display: flex;
+  background-color: #dddddd;
+  height: 19%;
+}
+
+.Layout234567891011121314151617181920212223 {
+  display: flex;
+  background-color: #ffffff;
+  height: 19%;
+}
+
+.Layout2345678910111213141516171819202122 {
+  display: flex;
+  background-color: #dddddd;
+  height: 19%;
+}
