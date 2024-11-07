@@ -24,7 +24,7 @@ export class ConfigService {
     const databasePort = process.env.DATABASE_PORT || '3306';
     const databaseUsername = process.env.DATABASE_USERNAME || 'user';
     const databasePassword = process.env.DATABASE_PASSWORD || 'password';
-    const databaseName = process.env.DATABASE_NAME || 'db';
+    const databaseName = process.env.DATABASE_NAME || 'ks-finanz-db';
 
     this.config = new Config(
       new BackendConfig(backendProtocol, backendDomain, backendPort, backendPrefix),
