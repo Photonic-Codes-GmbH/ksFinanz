@@ -1,6 +1,17 @@
-:host{
+:host, .Appc72a50a1 {
+
+	display: flex;
+	width: -webkit-fill-available;
+	padding: 10px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.Appc72a50a1 {
 
 	display: flex;
 	flex-direction: column;
-	height: -webkit-fill-available;
+	padding: 10px;
+	align-items: flex-start;
 }
+

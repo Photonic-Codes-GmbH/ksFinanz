@@ -1,17 +1,20 @@
-import { Component } from '@angular/core';
-
-import { DataService } from './shared/services/data.service';
-import { InteractionsService } from './shared/services/interactions.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { ProjectDataCacheService } from 'src/app/project-data-cache.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+	selector: 'app-appc72a50a1',
+	templateUrl: './appc72a50a1.component.html',
+	styleUrls: ['./appc72a50a1.component.scss']
 })
-export class AppComponent {
-  public constructor(
-    public readonly dataService: DataService,
-    public readonly interactionsService: InteractionsService
-  ) {
-  }
+export class Appc72a50a1Component implements OnInit {
+
+	@Input()
+	public prefix: string = '';
+
+	public constructor(public readonly projectDataCacheService: ProjectDataCacheService, ) {
+		
+	}
+
+	public ngOnInit(): void {
+	}
 }

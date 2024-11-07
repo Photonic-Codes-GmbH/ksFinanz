@@ -60,7 +60,7 @@ services:
     restart: unless-stopped
     environment:
       MARIADB_ROOT_PASSWORD: password
-      MARIADB_DATABASE: db
+      MARIADB_DATABASE: ks-finanz-db
       MARIADB_USER: user
       MARIADB_PASSWORD: password
     volumes:
