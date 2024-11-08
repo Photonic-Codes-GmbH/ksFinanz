@@ -1,3 +1,5 @@
+$hoverGrey: #bfbfbf;
+
 .App {
   display: flex;
   width: 100%;
@@ -35,6 +37,7 @@
 
 .logoivd {
 
+	margin-left: 15px;
   height: 32px;
 }
 
@@ -67,6 +70,7 @@
   display: flex;
   height: 32px;
   width: 32px;
+	margin-right: 15px;
 }
 
 .statusimage {
@@ -92,41 +96,6 @@
   justify-content: flex-start;
 }
 
-.userlayout {
-  display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  border-radius: 0px;
-  border-style: solid;
-  border-color: #bfbfbf;
-  border-width: 0px 0px 2px 0px;
-  gap: 1rem;
-  width: 80%;
-}
-
-.userimagelayout {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.userimage {
-
-  width: 32px;
-  height: 32px;
-}
-
-.userdatalayout {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .wiogilayout {
   display: flex;
   justify-content: center;
@@ -139,6 +108,7 @@
 }
 
 .activatedButton {
+
   box-shadow: 1px 4px 8px #00000045;
   cursor: pointer;
   border-width: 2px;
@@ -157,6 +127,7 @@
 }
 
 .activatedButton:hover {
+
   color: #ff0000;
   background-color: #ffffff;
 }
@@ -181,15 +152,15 @@
 
 .deactivatedButton:hover {
   color: #ffffff;
-  background-color: #bfbfbf;
+	background-color: $hoverGrey;
 }
 
 .kolayout {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+	padding-left: 20%;
+	padding-right: 20%;
   gap: 1rem;
 }
 
@@ -200,16 +171,17 @@
   justify-content: flex-start;
 }
 
-.kotext {}
-
 .bgsbutton {
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
   font-size: 16px;
   cursor: pointer;
-  border-color: #3d963c;
   padding-right: 30px;
   height: 48px;
   padding-left: 30px;
-  width: 80%;
   border-style: solid;
   border-width: 0px 0px 0px 0px;
   border-radius: 3px;
@@ -221,96 +193,10 @@
 }
 
 .bgsbutton:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
 
-.ehbutton {
-  border-color: #3d963c;
-  cursor: pointer;
-  font-size: 16px;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  height: 48px;
-  border-style: solid;
-  width: 80%;
-  border-width: 0px 0px 0px 0px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  color: #000000;
-  box-shadow: 1px 4px 8px #00000045;
+  color: #fff;
+  background-color: $hoverGrey;
 }
-
-.ehbutton:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.etwbutton {
-  cursor: pointer;
-  border-color: #3d963c;
-  font-size: 16px;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  height: 48px;
-  width: 80%;
-  border-style: solid;
-  border-radius: 3px;
-  border-width: 0px 0px 0px 0px;
-  color: #000000;
-  background-color: #ffffff;
-  box-shadow: 1px 4px 8px #00000045;
-}
-
-.etwbutton:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.robutton {
-  cursor: pointer;
-  font-size: 16px;
-  border-color: #3d963c;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  height: 48px;
-  border-style: solid;
-  width: 80%;
-  border-width: 0px 0px 0px 0px;
-  border-radius: 3px;
-  color: #000000;
-  background-color: #ffffff;
-  box-shadow: 1px 4px 8px #00000045;
-}
-
-.robutton:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.molayout {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  gap: 1rem;
-}
-
-.motextlayout {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 80%;
-}
-
-.motext {}
 
 .mpfwbutton {
   font-size: 16px;

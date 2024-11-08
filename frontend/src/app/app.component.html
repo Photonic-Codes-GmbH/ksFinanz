@@ -1,32 +1,44 @@
 <div class="App">
+
+<!--
+████████╗ ██████╗ ██████╗     ██████╗  ██████╗ ██╗    ██╗
+╚══██╔══╝██╔═══██╗██╔══██╗    ██╔══██╗██╔═══██╗██║    ██║
+   ██║   ██║   ██║██████╔╝    ██████╔╝██║   ██║██║ █╗ ██║
+   ██║   ██║   ██║██╔═══╝     ██╔══██╗██║   ██║██║███╗██║
+   ██║   ╚██████╔╝██║         ██║  ██║╚██████╔╝╚███╔███╔╝
+   ╚═╝    ╚═════╝ ╚═╝         ╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝
+-->
   <div class="titlelayout">
     <div class="logolayout">
       <div class="logoivd">
-        <p><img src="https://www.wentzel-dr.de/wp-content/uploads/ivd_logo.png" alt="" width="43" height="32"></p>
+        <img width="32" height="31" src="../assets/ivd-logo-weiss.png" alt="">
       </div>
       <div class="logoksfinanz">
-        <p><img
+        <img
             src="https://ms.immowelt.org/cc85e29e-48b8-470c-8564-53448ffd2917/8ca81db8-6ce7-4f06-b998-fdc3fb0b565b/160x0/high.webp"
-            alt="" width="135" height="32"></p>
+            alt="" width="135" height="32">
       </div>
     </div>
     <div class="tlayout">
-      <p id="t1" class="t1" style="font-weight: bold; height: 24px; font-size: 32px;">
+      <a id="t1" style="display: flex; align-items: center; font-weight: bold; font-size: 32px;">
         Erfassung Immobilienpreisspiegel Nordhessen
-      </p>
-      <p id="t2" class="t2" style="font-size: 24px; height: 20px;">
+      </a>
+      <a id="t2" style="display: flex; align-items: center; font-size: 24px;">
         Wohn und Gewerbeimmobilien
-      </p>
+      </a>
     </div>
     <div class="statuslayout">
       <div class="statusimage">
-        <p><img src="https://api.iconify.design/gg/check-o.svg?color=%23aaa" alt="" width="32" height="32"></p>
+        <img src="https://api.iconify.design/gg/check-o.svg?color=%23aaa" alt="" width="32" height="32">
       </div>
     </div>
   </div>
+
   <div class="containerlayout">
     <div class="navlayout">
       <div class="wiogilayout">
+
+				<!-- Wohnimmobilie button -->
         <button #thisbutton_wibutton type="button"
           [style]="{
                       'display': 'flex',
@@ -38,7 +50,6 @@
           [class.deactivatedButton]="wohnen != 'Wohnen'"
           (click)="wohnen = 'Wohnen'">
 
-
           <div  [style]="{
                           'color': 'inherit',
                           'font': 'inherit',
@@ -48,9 +59,9 @@
                 class="focus:outline-0 bg-transparent">
             <span> Wohnimmobilie </span>
           </div>
-
-
         </button>
+
+				<!-- Gewerbeimmobilie button -->
         <button #thisbutton_gibutton type="button"
           [style]="{
                     'display': 'flex',
@@ -70,11 +81,12 @@
                         class="focus:outline-0 bg-transparent">
             <span> Gewerbeimmobilie </span>
           </div>
-
         </button>
+
       </div>
       <ng-container *ngIf="wohnen === 'Wohnen'; then Wohnen1 else Gewerbe"></ng-container>
     </div>
+
     <div class="contentlayout">
       <router-outlet></router-outlet>
     </div>
@@ -87,7 +99,6 @@
   ╚════██║██╔══╝  ██║╚██╗██║██║  ██║    ██║  ██║██║██╔══██║██║     ██║   ██║██║   ██║
   ███████║███████╗██║ ╚████║██████╔╝    ██████╔╝██║██║  ██║███████╗╚██████╔╝╚██████╔╝
   ╚══════╝╚══════╝╚═╝  ╚═══╝╚═════╝     ╚═════╝ ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝
-
   -->
   <div class="dialog" *ngIf="dialogsService.isSaveDialogVisible">
     <div class="header">
@@ -156,7 +167,6 @@
 ╚════██║██║   ██║██║     ██║     ██╔══╝  ╚════██║╚════██║    ██║  ██║██║██╔══██║██║     ██║   ██║██║   ██║
 ███████║╚██████╔╝╚██████╗╚██████╗███████╗███████║███████║    ██████╔╝██║██║  ██║███████╗╚██████╔╝╚██████╔╝
 ╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝╚══════╝╚══════╝╚══════╝    ╚═════╝ ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝
-
 -->
   <div class="dialogsuccess" *ngIf="dialogsService.isSaveSuccededDialogVisible">
     <div class="headersuccess">
@@ -168,8 +178,18 @@
       </div>
     </div>
   </div>
-</div>
 
+</div>
+<!-- End of App -->
+
+<!--
+██╗    ██╗ ██████╗ ██╗  ██╗███╗   ██╗███████╗███╗   ██╗    ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
+██║    ██║██╔═══██╗██║  ██║████╗  ██║██╔════╝████╗  ██║    ████╗ ████║██╔════╝████╗  ██║██║   ██║
+██║ █╗ ██║██║   ██║███████║██╔██╗ ██║█████╗  ██╔██╗ ██║    ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
+██║███╗██║██║   ██║██╔══██║██║╚██╗██║██╔══╝  ██║╚██╗██║    ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
+╚███╔███╔╝╚██████╔╝██║  ██║██║ ╚████║███████╗██║ ╚████║    ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
+ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═══╝    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝
+-->
 <ng-template #Wohnen1>
   <div class="kolayout">
     <div class="kotextlayout">
@@ -177,15 +197,8 @@
         Kaufobjekte
       </a>
     </div>
-    <button #thisbutton_bgsbutton type="button"
-      (mouseover)="thisbutton_bgsbutton.style.color = '#000000'; thisbutton_bgsbutton.style.backgroundColor = '#ffffff'"
-      (mouseout)="thisbutton_bgsbutton.style.color = '#000000'; thisbutton_bgsbutton.style.backgroundColor = '#ffffff'"
-      [style]="{
-'display': 'flex',
-'flex-direction': 'row',
-'align-items': 'center',
-'justify-content': 'center'
-}" class="bgsbutton" [routerLink]="['']">
+
+    <button #thisbutton_bgsbutton class="bgsbutton" [routerLink]="['']">
       <img [src]="'https://api.iconify.design/gis/rectangle-pt.svg' + '?color=%23' + 'ff0000'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
 
@@ -202,15 +215,8 @@
       <img [src]="'https://api.iconify.design/ci/info.svg' + '?color=%23' + '8c8c8c'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
     </button>
-    <button #thisbutton_ehbutton type="button"
-      (mouseover)="thisbutton_ehbutton.style.color = '#000000'; thisbutton_ehbutton.style.backgroundColor = '#ffffff'"
-      (mouseout)="thisbutton_ehbutton.style.color = '#000000'; thisbutton_ehbutton.style.backgroundColor = '#ffffff'"
-      [style]="{
-'display': 'flex',
-'flex-direction': 'row',
-'align-items': 'center',
-'justify-content': 'center'
-}" class="ehbutton" [routerLink]="['eigenheime']">
+
+    <button #thisbutton_ehbutton type="button" class="bgsbutton" [routerLink]="['eigenheime']">
       <img [src]="'https://api.iconify.design/bi/house-fill.svg' + '?color=%23' + 'ff0000'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
 
@@ -227,15 +233,9 @@
       <img [src]="'https://api.iconify.design/ci/info.svg' + '?color=%23' + '8c8c8c'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
     </button>
-    <button #thisbutton_etwbutton type="button"
-      (mouseover)="thisbutton_etwbutton.style.color = '#000000'; thisbutton_etwbutton.style.backgroundColor = '#ffffff'"
-      (mouseout)="thisbutton_etwbutton.style.color = '#000000'; thisbutton_etwbutton.style.backgroundColor = '#ffffff'"
-      [style]="{
-'display': 'flex',
-'flex-direction': 'row',
-'align-items': 'center',
-'justify-content': 'center'
-}" class="etwbutton" [routerLink]="['eigentumswohnungen']">
+
+    <button #thisbutton_etwbutton type="button" class="bgsbutton"
+						[routerLink]="['eigentumswohnungen']">
       <img [src]="'https://api.iconify.design/material-symbols/apartment-rounded.svg' + '?color=%23' + 'ff0000'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
 
@@ -252,15 +252,8 @@
       <img [src]="'https://api.iconify.design/ci/info.svg' + '?color=%23' + '8c8c8c'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
     </button>
-    <button #thisbutton_robutton type="button"
-      (mouseover)="thisbutton_robutton.style.color = '#000000'; thisbutton_robutton.style.backgroundColor = '#ffffff'"
-      (mouseout)="thisbutton_robutton.style.color = '#000000'; thisbutton_robutton.style.backgroundColor = '#ffffff'"
-      [style]="{
-'display': 'flex',
-'flex-direction': 'row',
-'align-items': 'center',
-'justify-content': 'center'
-}" class="robutton" [routerLink]="['renditeobjekte']">
+
+    <button #thisbutton_robutton type="button" class="bgsbutton" [routerLink]="['renditeobjekte']">
       <img [src]="'https://api.iconify.design/wpf/banknotes.svg' + '?color=%23' + 'ff0000'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
 
@@ -277,41 +270,48 @@
       <img [src]="'https://api.iconify.design/ci/info.svg' + '?color=%23' + '8c8c8c'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
     </button>
+
   </div>
-  <div class="molayout">
-    <div class="motextlayout">
+
+	<!-- Mietobjekte -->
+  <div class="kolayout">
+
+    <div class="kotextlayout">
       <a id="motext" class="motext" style>
         Mietobjekte
       </a>
     </div>
-    <button #thisbutton_mpfwbutton type="button"
-      (mouseover)="thisbutton_mpfwbutton.style.color = '#000000'; thisbutton_mpfwbutton.style.backgroundColor = '#ffffff'"
-      (mouseout)="thisbutton_mpfwbutton.style.color = '#000000'; thisbutton_mpfwbutton.style.backgroundColor = '#ffffff'"
-      [style]="{
-'display': 'flex',
-'flex-direction': 'row',
-'align-items': 'center',
-'justify-content': 'center'
-}" class="mpfwbutton" [routerLink]="['mietpreise_fuer_wohnungen']">
+
+    <button #thisbutton_mpfwbutton type="button" class="bgsbutton" [routerLink]="['mietpreise_fuer_wohnungen']">
       <img [src]="'https://api.iconify.design/game-icons/house-keys.svg' + '?color=%23' + 'ff0000'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
 
-      <div [style]="{
-'width': '100%',
-'color': 'inherit',
-'font': 'inherit',
-'text-align': 'left',
-'font-weight': 'bold'
-}" class="focus:outline-0 bg-transparent">
+			<div [style]="{
+			'width': '100%',
+			'color': 'inherit',
+			'font': 'inherit',
+			'text-align': 'left',
+			'font-weight': 'bold'
+			}" class="focus:outline-0 bg-transparent">
         <span> Mietpreise für Wohnungen </span>
       </div>
 
       <img [src]="'https://api.iconify.design/ci/info.svg' + '?color=%23' + '8c8c8c'"
         style="margin-left: 8px; margin-right: 8px; width: 24px; height: 24px;">
     </button>
+
   </div>
 </ng-template>
 
+<!--
+ ██████╗ ███████╗██╗    ██╗███████╗██████╗ ██████╗ ███████╗    ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
+██╔════╝ ██╔════╝██║    ██║██╔════╝██╔══██╗██╔══██╗██╔════╝    ████╗ ████║██╔════╝████╗  ██║██║   ██║
+██║  ███╗█████╗  ██║ █╗ ██║█████╗  ██████╔╝██████╔╝█████╗      ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
+██║   ██║██╔══╝  ██║███╗██║██╔══╝  ██╔══██╗██╔══██╗██╔══╝      ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
+╚██████╔╝███████╗╚███╔███╔╝███████╗██║  ██║██████╔╝███████╗    ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
+ ╚═════╝ ╚══════╝ ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝
+
+-->
 <ng-template #Gewerbe>
   <div class="kolayout">
     <div class="kotextlayout">

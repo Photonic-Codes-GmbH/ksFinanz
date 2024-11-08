@@ -488,7 +488,7 @@ export class SplitAndTrimAction extends Action {
 		if(!selectedSheet) return console.error('No sheet selected. I\'m trying to get all columns from the trigger')
 		console.log('This is the selected sheet:', selectedSheet)
 
-		const columns = []
+		const columns: any[] = []
 		for (let key in selectedSheet) {
 
 			if (key.length === 2 && key.endsWith('1')) columns.push(key.charAt(0))
